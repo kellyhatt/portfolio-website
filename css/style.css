@@ -1,0 +1,113 @@
+/*
+#518396 blue primary
+#87857d grey
+#7bbf6c green Accent colour
+*/
+
+body {
+  background-color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #87857d;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Proza Libre', sans-serif;
+  line-height: 1.4;
+  color: #518396;
+}
+h1 {
+  font-size: 2.75em;
+  font-weight: 600;
+  color: #518396;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 1.35em;
+  font-weight: 600;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #7bbf6c;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #518396;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #7bbf6c;
+}
+
+a:active {
+  color: #7bbf6c;
+}
+
+a:hover,
+a:focus {
+  color: #518396;
+  text-decoration: none;
+}
+
+.button {
+  display: inline-block;
+ background-color: #7bbf6c;
+ color: #ffffff !important;
+ font-weight: 400;
+ padding: 10px;
+ border-radius: 3px;
+ border-bottom: 2px solid #7bbf6c;
+ transition: 0.2s opacity;
+}
+/*
+#518396 blue primary
+#87857d grey
+#7bbf6c green Accent colour
+*/
+.button:hover {
+  background-color: #518396;
+  text-decoration: none;
+}
+
+.button:active {
+  background-color: #7bbf6c;
+  color: #ffffff;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #7bbf6c !important;
+  text-transform: uppercase;
+  border: 2px solid #7bbf6c;
+  text-decoration: none;
+}
+
+.button.contact:hover {
+  background-color: #7bbf6c;
+  color: #ffffff !important;
+}
+
+.button.contact:active {
+  background-color: #7bbf6c;
+  color: #ffffff !important;
+}

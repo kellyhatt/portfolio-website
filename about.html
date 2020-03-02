@@ -3,12 +3,16 @@
   <head>
     <meta charset="utf-8">
     <script src="https://kit.fontawesome.com/d9ae58f40d.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Proza+Libre:400,600,700&display=swap" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>About Kelly Hatt</title>
   </head>
   <body>
       <header>
         <div>
-          <a href="index.html">Kelly Hatt</a>
+          <a href="index.html">Kelly Hatt UX Designer</a>
             <nav>
               <ul>
                 <li><a href="about.html">About</a></li>
@@ -19,73 +23,74 @@
         </div>
       </header>
       <main>
-        <div><!--orange 1-->
-          <div><!--yellow 1 open-->
-            <h1>About Me</h1>
-          </div><!--yellow 1 close-->
-        </div><!--orange 1 close-->
-        <div><!--orange 2 open-->
-          <div><!--yellow 2 open-->
-            <picture>
-              <source srcset="../img/profile@1.jpg" media="(max-width:300px)">
-              <img src="img/profile@1.jpg" alt="Profile Image">
-            </picture>
-            <div><!--row-->
-              <div><!--column left -->
-                <h2>My Story</h2>
-                <p>
-                  I have a BA(Hons) in Surface and Textiles and since graduating have worked for several different lighting designers,
-                  making and managing their designs and concepts, making their ideas become a reality. I have always enjoyed making websites through
-                  online packages and teaching myself HTML basics when I discovered user experience design and found many of my interests and skills
-                  aligned in the discipline. A huge part of my career so far has been surrounded by problem solving and this is something I have really enjoyed
-                  as part of my 10 month Career Foundry intensive program.
-                </p>
-                <p>
-                  When I’m not working I enjoy drawing architecture, mainly hundreds of tiny windows and every detail about them and visiting London and
-                  other cities for inspiration. The rest of my time is spent researching, moodboarding and renovating my 250 year old canalside cottage.
-                </p>
-                <a href="files/cv.pdf" target="_blank">View my CV</a>
-              </div><!--column left close -->
-              <div><!--column right -->
-                <h2>Skills & Tools</h2>
-                    <div><!--list open-->
-                      <h3>Relevant Skills</h3>
-                      <ul>
-                        <li>Interviewing</li>
-                        <li>Surveying</li>
-                        <li>Usability testing</li>
-                        <li>User personas</li>
-                        <li>Wireframing</li>
-                        <li>Prototyping</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                      </ul>
-                    </div><!--list close-->
-                    <div>
-                    <h3>Tools I Use</h3>
-                    <ul>
-                      <li>Invision</li>
-                      <li>Sketch</li>
-                      <li>Usability Hub</li>
-                      <li>Photoshop</li>
-                      <li>Illustrator</li>
-                      <li>AutoCAD</li>
-                    </ul>
-                  </div>
+        <div id="about me">
+          <div class="container">
+              <h1>About Me</h1>
+              <div class="row">
+                <picture>
+                  <source srcset="../img/profile@1.jpg" media="(max-width:300px)">
+                    <img src="img/profile@1.jpg" alt="Profile Image">
+                </picture>
               </div>
-            </div><!--row -->
-          </div><!--yellow 2 close-->
-        </div><!--orange 2 close-->
+              <div class="row">
+                <div class="column"><!--column 1 (left) -->
+                  <h2>My Story</h2>
+                  <p>
+                    I have a BA(Hons) in Surface and Textiles and since graduating have worked for several different lighting designers,
+                    making and managing their designs and concepts, making their ideas become a reality. I have always enjoyed making websites through
+                    online packages and teaching myself HTML basics when I discovered user experience design and found many of my interests and skills
+                    aligned in the discipline. A huge part of my career so far has been surrounded by problem solving and this is something I have really enjoyed
+                    as part of my 10 month Career Foundry intensive program.
+                  </p>
+                  <p>
+                    When I’m not working I enjoy drawing architecture, mainly hundreds of tiny windows and every detail about them and visiting London and
+                    other cities for inspiration. The rest of my time is spent researching, moodboarding and renovating my 250 year old canalside cottage.
+                  </p>
+                  <a href="files/cv.pdf" class="button" target="_blank">View my CV</a>
+                </div><!--column 1 left close -->
+
+                <div class="column"><!--column 2 (right) -->
+                  <h2>Skills & Tools</h2>
+                      <div><!--list open-->
+                        <h3>Relevant Skills</h3>
+                        <ul>
+                          <li>Interviewing</li>
+                          <li>Surveying</li>
+                          <li>Usability testing</li>
+                          <li>User personas</li>
+                          <li>Wireframing</li>
+                          <li>Prototyping</li>
+                          <li>HTML</li>
+                          <li>CSS</li>
+                          <li>JavaScript</li>
+                        </ul>
+                      </div><!--list close-->
+                      <div>
+                        <h3>Tools I Use</h3>
+                        <ul>
+                          <li>Invision</li>
+                          <li>Sketch</li>
+                          <li>Usability Hub</li>
+                          <li>Photoshop</li>
+                          <li>Illustrator</li>
+                          <li>AutoCAD</li>
+                        </ul>
+                      </div>
+                </div>
+
+              </div><!--row -->
+            </div><!--container close-->
+        </div><!-- about me div closed-->
+      </main>
 <!--Footer-->
-        <footer id="contact">
+      <footer id="contact">
           <div>
             <h2>Get in Touch</h2>
               <p>
               Do you like my work and want to discuss opportunities? Please get in touch.
               Call: <a href="tel:+4412345678">+4412345678</a></p>
           <div>
-            <a href="mailto:studio@kellyhatt.com">Email me</a>
+            <a href="mailto:studio@kellyhatt.com" class="button contact">Email me</a>
           </div>
           <div>
             <ul>
@@ -95,7 +100,6 @@
           </div>
             <p> Copyright Kelly Hatt 2020</p>
           </div>
-        </footer>
-      </main>
+      </footer>
     </body>
 </html>
