@@ -3,12 +3,16 @@
   <head>
     <meta charset="utf-8">
     <script src="https://kit.fontawesome.com/d9ae58f40d.js" crossorigin="anonymous"></script>
-    <title>Home</title>
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Proza+Libre:400,600,700&display=swap" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Brew Hunt UX Project</title>
   </head>
   <body>
       <header>
         <div>
-          <a href="index.html">Brew Hunt UX Project</a>
+          <a href="index.html">Kelly Hatt UX Designer</a>
             <nav>
               <ul>
                 <li><a href="about.html">About</a></li>
@@ -37,7 +41,7 @@
           </div>
         </div>
 
-        <div class="section"><!--My process div open-->
+        <div id="brew_hunt_research">
           <div class="container">
             <h2>My Process</h2>
 <!--research-->
@@ -58,7 +62,7 @@
           </div>
 
 <!--Ideation-->
-          <div class="section">
+          <div id="brew_hunt_ideation">
             <div class="container">
               <picture>
                 <source srcset="../img/brew_hunt/brew_hunt_persona@1x.jpg" media="(max-width:767px)">
@@ -72,7 +76,7 @@
             </div>
           </div>
 <!--Wireframe-->
-          <div class="section">
+          <div id="brew_hunt_wireframe">
             <div class="container">
               <div class="row">
                 <div class="column">
@@ -100,8 +104,7 @@
                   </picture>
                 </div>
               </div>
-            </div>
-            <div>
+              <div>
                   <h3>Wireframing</h3>
                   <p>
                     Wireframes were tested throughout the iterative design process focusing on the three features.
@@ -119,27 +122,27 @@
                   <p>
                     The ability to read reviews and share their own views was important to users and something that they have found unreliable in other products.
                   </p>
-            </div>
+                </div>
           </div>
+        </div>
 <!--Design-->
-          <div class="section">
+        <div id="brew_hunt_design">
             <div class="container">
               <div class="row">
-                <div class="column"> <!--column 1-->
+                <div class="column"> <!--image column 1-->
                   <picture>
                     <source srcset="../img/brew_hunt/brew_hunt_accessibility2.1@1.jpg" media="(max-width:767px)">
                       <img src="img/brew_hunt/brew_hunt_accessibility2.1@2.jpg" alt="Brew Hunt Landing Page Before">
                   </picture>
                 </div>
-                <div class="column"><!--column 2-->
+                <div class="column"><!--image column 2-->
                   <picture>
                     <source srcset="../img/brew_hunt/brew_hunt_accessibility2.2@1.jpg" media="(max-width:767px)">
                       <img src="img/brew_hunt/brew_hunt_accessibility2.2@2.jpg" alt="Brew Hunt Landing Page improved">
                   </picture>
-                </div><!--close olumn 2-->
+                </div><!--close column 2-->
               </div><!--close row-->
-            </div><!--close container-->
-            <div class="container">
+              <div><!--text-->
                     <h3>Design</h3>
                     <p>
                       Accessibility is integral to successful design, following iterations of each wireframe and further testing the design was adjusted to be more inclusive and accessible to a wider range of users.
@@ -147,63 +150,61 @@
                     <p>
                       The background image in the landing page has an opaque overlay but the lighter text is partially lost. To improve this I added an additional darker shape underneath both the text and CTA to make them stand out more.
                     </p>
-            </div><!--close container-->
-
-            <div class="container">
-              <div> <!--image-->
-                <picture>
-                  <source srcset="../img/brew_hunt/brew_hunt_accessibility1.1@1.jpg" media="(max-width:767px)">
-                    <img src="img/brew_hunt/brew_hunt_accessibility1.1@2.jpg" alt="Brew Hunt Login screen before">
-                </picture>
               </div>
-              <div>
-                <picture>
-                  <source srcset="../img/brew_hunt/brew_hunt_accessibility2.2@1.jpg" media="(max-width:767px)">
-                    <img src="img/brew_hunt/brew_hunt_accessibility1.1@2.jpg" alt="Brew Hunt Login screen improved">
-                </picture>
+              <div class="row">
+                <div class="column"> <!--image column 1-->
+                  <picture>
+                    <source srcset="../img/brew_hunt/brew_hunt_accessibility1.1@1.jpg" media="(max-width:767px)">
+                      <img src="img/brew_hunt/brew_hunt_accessibility1.1@2.jpg" alt="Brew Hunt Login screen before">
+                  </picture>
+                </div>
+                <div class="column"> <!--image column 2-->
+                  <picture>
+                    <source srcset="../img/brew_hunt/brew_hunt_accessibility2.2@1.jpg" media="(max-width:767px)">
+                      <img src="img/brew_hunt/brew_hunt_accessibility1.1@2.jpg" alt="Brew Hunt Login screen improved">
+                  </picture>
+                </div>
               </div>
-              <div>
+              <div> <!--text-->
                 <p>
                   In the login process users are prompted with placeholder text with what they should enter into the two fields to be able to sign in. Once selected, this text disappears, which may cause confusion if the user is distracted or forgets what they are meant to be entering. To assist the users further in this process, I have moved this placeholder text to the heading of each form field and added additional prompts.
                 </p>
               </div>
-            </div><!--container close-->
 
-            <div class="container"><!--design accessibility sub 3 open-->
-              <div> <!--image-->
-                <picture>
-                  <source srcset="../img/brew_hunt/brew_hunt_accessibility3.1@1.jpg" media="(max-width:767px)">
-                    <img src="img/brew_hunt/brew_hunt_accessibility3.1@2.jpg" alt="Brew Hunt search results before">
-                </picture>
+              <div class="row">
+                <div class="column"> <!--image column 1-->
+                  <picture>
+                    <source srcset="../img/brew_hunt/brew_hunt_accessibility3.1@1.jpg" media="(max-width:767px)">
+                      <img src="img/brew_hunt/brew_hunt_accessibility3.1@2.jpg" alt="Brew Hunt search results before">
+                  </picture>
+                </div>
+                <div class="column"> <!--image column 2-->
+                  <picture>
+                      <source srcset="../img/brew_hunt/brew_hunt_accessibility3.2@1.jpg" media="(max-width:767px)">
+                        <img src="img/brew_hunt/brew_hunt_accessibility3.2@2.jpg" alt="Brew Hunt Search results improved">
+                  </picture>
+                </div>
               </div>
-              <div>
-                <picture>
-                  <source srcset="../img/brew_hunt/brew_hunt_accessibility3.2@1.jpg" media="(max-width:767px)">
-                    <img src="img/brew_hunt/brew_hunt_accessibility3.2@2.jpg" alt="Brew Hunt Search results improved">
-                </picture>
+              <div> <!--text-->
+                <p>
+                  The colours in the search results design do not score highly enough for a AAA rating. The orange and white combination scored 5.6:1, rating it as an AA score. By amending these colours to the red in my colour palette, in both the buttons and the outline of the search bar the rating is now AAA and scores 9.88:1.
+                </p>
               </div>
-              <div>
-                  <p>
-                    The colours in the search results design do not score highly enough for a AAA rating. The orange and white combination scored 5.6:1, rating it as an AA score. By amending these colours to the red in my colour palette, in both the buttons and the outline of the search bar the rating is now AAA and scores 9.88:1.
-                  </p>
-              </div>
-            </div><!--container closed-->
+            </div>  <!--container close-->
           </div><!--section close-->
 <!--Prototype-->
-          <div class="section">
+          <div id="brew_hunt_prototype">
             <div class="container">
-              <div> <!--image-->
-                <picture>
-                  <source srcset="../img/brew_hunt/brew_hunt_prototype@1.jpg" media="(max-width:767px)">
-                    <img src="img/brew_hunt/brew_hunt_prototype@2.jpg" alt="Brew Hunt prototype">
-                </picture>
-              </div>
-              <div>
-                  <div>
-                    <h3>Prototype</h3>
-                      <a href="https://kelly746489.invisionapp.com/public/share/NDYVQCVEV#/screens/475593338">Brew Hunt clickable prototype</a>
-                  </div>
-              </div>
+                <div> <!--image-->
+                  <picture>
+                    <source srcset="../img/brew_hunt/brew_hunt_prototype@1.jpg" media="(max-width:767px)">
+                      <img src="img/brew_hunt/brew_hunt_prototype@2.jpg" alt="Brew Hunt prototype">
+                  </picture>
+                </div>
+                <div>
+                  <h3>Prototype</h3>
+                  <a href="https://kelly746489.invisionapp.com/public/share/NDYVQCVEV#/screens/475593338">Brew Hunt clickable prototype</a>
+                </div>
             </div><!--close container-->
           </div><!--close section-->
       </main>
@@ -217,7 +218,7 @@
               Do you like my work and want to discuss opportunities? Please get in touch.
               Call: <a href="tel:+4412345678">+4412345678</a></p>
               <div>
-                <a href="mailto:studio@kellyhatt.com">Email me</a>
+                <a href="mailto:studio@kellyhatt.com" class="button contact">Email me</a>
               </div>
               <div>
                 <ul>
