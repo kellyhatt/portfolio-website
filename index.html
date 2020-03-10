@@ -2,30 +2,36 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <script src="https://kit.fontawesome.com/d9ae58f40d.js" crossorigin="anonymous"></script>
-      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Proza+Libre:400,600,700&display=swap" rel="stylesheet">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/d9ae58f40d.js" crossorigin="anonymous"></script>
+
   </head>
   <body>
       <header>
-        <div>
-          <a href="index.html">Kelly Hatt UX Designer</a>
-            <nav>
-              <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="index.html">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-            </nav>
+        <div class="section">
+          <div class="container">
+            <div class="row">
+              <img src="img/cv.jpg" class="logo" alt="Kelly Hatt UX Designer">
+                <nav>
+                  <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                  </ul>
+                </nav>
+            </div>
+          </div>
         </div>
       </header>
       <main>
 <!--Hero section-->
-        <div id="index hero">
-            <div>
+        <div id="index-hero">
+          <div class="container">
+            <div class="row">
               <h1>Hi, I’m Kelly <span> and I am a chandelier maker turned user experience designer!</span></h1>
               <p>
                 My background in chandelier and light installation design and making has
@@ -33,50 +39,55 @@
                 all of which have allowed me to deep dive into the world of user experience design.
               </p>
             </div>
+          </div>
         </div>
 <!--Work section-->
         <div id="work">
-          <div>
-            <h2>Projects</h2>
-            <div>
-              <div> <!--left column-->
-                <picture>
-                  <source srcset="../img/brew_hunt/brew_hunt@1px.jpg" media="(max-width:767px)">
-                  <img src="img/brew_hunt/brew_hunt@2px.jpg" alt="Brew Hunt">
-                </picture>
-              </div>
-              <div><!--right column-->
-                <h3>Brew Hunt</h3>
-                <p>
-                  A web application showcasing the best local brews with even better discounts.
-                  An app inspired by scavenger huntings and exploring, Brew Hunt aims to help
-                  visitors and locals discover hidden locations where they can follow clues that
-                  lead to discounts off the best local brews.
-                </p>
-                  <a href="brewhunt.html" class="button">View Project</a>
+          <div class="container">
+            <div class="row">
+              <h2>Projects</h2>
+              <div class="row">
+                <div id="work-img"> <!--left column-->
+                  <picture>
+                    <source srcset="../img/brew_hunt/brew_hunt@1px.jpg" media="(max-width:767px)">
+                    <img src="img/brew_hunt/brew_hunt@2px.jpg" alt="Brew Hunt">
+                  </picture>
+                </div>
+                <div id="work-text"><!--right column-->
+                  <h3>Brew Hunt</h3>
+                  <p>
+                    A web application showcasing the best local brews with even better discounts.
+                    An app inspired by scavenger huntings and exploring, Brew Hunt aims to help
+                    visitors and locals discover hidden locations where they can follow clues that
+                    lead to discounts off the best local brews.
+                  </p>
+                    <a href="brewhunt.html" class="button">View Project</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </main>
 <!--Footer-->
         <footer id="contact">
-          <div>
-            <h2>Get in Touch</h2>
-              <p>
-              Do you like my work and want to discuss opportunities? Please get in touch.
-              Call: <a href="tel:+4412345678">+4412345678</a></p>
-              <div>
-                <a href="mailto:studio@kellyhatt.com" class="button contact">Email me</a>
-              </div>
-              <div>
-                <ul>
-                  <li><a href="https://linkedin.com" target="_blank"> <i class="fab fa-linkedin"></i></a></li>
-                  <li><a href="https://twitter.com/kellyhatt_?lang=en" target="_blank"> <i class="fab fa-twitter"></i></a></li>
-                </ul>
-              </div>
-            <p> Copyright Kelly Hatt 2020</p>
+          <div class="container">
+            <div class="row">
+              <h5>Get in Touch</h5>
+                <p>
+                Do you like my work and want to discuss opportunities?</a>
+                </p>
+                <div class="contact-button">
+                  <a href="mailto:studio@kellyhatt.com" class="button contact">Email me</a>
+                </div>
+                <div id="social-links">
+                  <ul>
+                    <li><a href="https://linkedin.com" target="_blank"> <i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://twitter.com/kellyhatt_?lang=en" target="_blank"> <i class="fab fa-twitter"></i></a></li>
+                  </ul>
+                </div>
+              <p> Copyright Kelly Hatt 2020</p>
+            </div>
           </div>
         </footer>
-      </main>
     </body>
 </html>
