@@ -2,38 +2,43 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brew Hunt</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://kit.fontawesome.com/d9ae58f40d.js" crossorigin="anonymous"></script>
-      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Proza+Libre:400,600,700&display=swap" rel="stylesheet">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Brew Hunt UX Project</title>
+
   </head>
   <body>
       <header>
-        <div>
-          <a href="index.html">Kelly Hatt UX Designer</a>
-            <nav>
-              <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="index.html">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-            </nav>
+        <div class="section">
+          <div class="container">
+            <div class="row">
+              <img src="img/cv.jpg" class="logo" alt="Kelly Hatt UX Designer">
+                <nav>
+                  <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                  </ul>
+                </nav>
+            </div>
+          </div>
         </div>
       </header>
       <main>
 <!--Hero section-->
-        <div class="section">
+        <div id="brew-hunt-hero">
           <div class="container">
             <h1>Brew Hunt</h1>
-            <div> <!--image-->
+            <div class="row"> <!--image-->
               <picture>
                 <source srcset="../img/brew_hunt/brew_hunt_cover@1.jpg" media="(max-width:767px)">
                   <img src="img/brew_hunt/brew_hunt_cover@1.jpg" alt="Brew Hunt">
               </picture>
             </div>
-            <div>
+            <div class="row">
               <p>
               A web application showcasing the best local brews with even better discounts. In the spring of 2019 I embarked on an exciting new direction, the first step in a change of career with the help of Career Foundry’s UX Design Course. Throughout this 600 hour program I applied the UX techniques learnt and created this web app, Brew Hunt.
               </p>
@@ -104,7 +109,7 @@
                   </picture>
                 </div>
               </div>
-              <div>
+              <div id="wireframe-content">
                   <h3>Wireframing</h3>
                   <p>
                     Wireframes were tested throughout the iterative design process focusing on the three features.
@@ -142,7 +147,7 @@
                   </picture>
                 </div><!--close column 2-->
               </div><!--close row-->
-              <div><!--text-->
+              <div class="row"><!--text-->
                     <h3>Design</h3>
                     <p>
                       Accessibility is integral to successful design, following iterations of each wireframe and further testing the design was adjusted to be more inclusive and accessible to a wider range of users.
@@ -165,7 +170,7 @@
                   </picture>
                 </div>
               </div>
-              <div> <!--text-->
+              <div class="row"> <!--text-->
                 <p>
                   In the login process users are prompted with placeholder text with what they should enter into the two fields to be able to sign in. Once selected, this text disappears, which may cause confusion if the user is distracted or forgets what they are meant to be entering. To assist the users further in this process, I have moved this placeholder text to the heading of each form field and added additional prompts.
                 </p>
@@ -195,13 +200,13 @@
 <!--Prototype-->
           <div id="brew_hunt_prototype">
             <div class="container">
-                <div> <!--image-->
+                <div class="row"> <!--image-->
                   <picture>
                     <source srcset="../img/brew_hunt/brew_hunt_prototype@1.jpg" media="(max-width:767px)">
                       <img src="img/brew_hunt/brew_hunt_prototype@2.jpg" alt="Brew Hunt prototype">
                   </picture>
                 </div>
-                <div>
+                <div class="row">
                   <h3>Prototype</h3>
                   <a href="https://kelly746489.invisionapp.com/public/share/NDYVQCVEV#/screens/475593338">Brew Hunt clickable prototype</a>
                 </div>
@@ -211,16 +216,17 @@
 
 
 <!--Footer-->
-        <footer id="contact">
-          <div>
-            <h2>Get in Touch</h2>
+      <footer id="contact">
+        <div class="container">
+          <div class="row">
+            <h5>Get in Touch</h5>
               <p>
-              Do you like my work and want to discuss opportunities? Please get in touch.
-              Call: <a href="tel:+4412345678">+4412345678</a></p>
-              <div>
+              Do you like my work and want to discuss opportunities?</a>
+              </p>
+              <div class="contact-button">
                 <a href="mailto:studio@kellyhatt.com" class="button contact">Email me</a>
               </div>
-              <div>
+              <div id="social-links">
                 <ul>
                   <li><a href="https://linkedin.com" target="_blank"> <i class="fab fa-linkedin"></i></a></li>
                   <li><a href="https://twitter.com/kellyhatt_?lang=en" target="_blank"> <i class="fab fa-twitter"></i></a></li>
@@ -228,7 +234,8 @@
               </div>
             <p> Copyright Kelly Hatt 2020</p>
           </div>
-        </footer>
+        </div>
+      </footer>
 
     </body>
 </html>
