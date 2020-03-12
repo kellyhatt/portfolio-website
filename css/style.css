@@ -18,17 +18,31 @@ body {
   color: #000;
 }
 
-h1, h2 {
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.4;
+  color: #33D1C7;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+
+h2 {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.4;
   color: #33D1C7;
   font-weight: 800;
   text-transform: uppercase;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
-h1 {
-  font-size: 2.75em;
+
+span {
+  color: #000000;
+  font-weight: 200;
+  text-transform: unset;
 }
 
 h2 {
@@ -72,8 +86,6 @@ footer h4 {
   font-weight: 200;
 }
 
-
-
 a {
   color: #33D1C7;
   text-decoration: none;
@@ -93,22 +105,21 @@ a:focus {
 
 .button {
   display: inline-block;
- background-color: #33D1C7 ;
- color: #fff !important;
- font-weight: 300;
- padding: 10px 60px;
- border-radius: 1px;
- border-bottom: 2px
- transition: 0.2s opacity;
- text-transform: uppercase;
+  background-color: #33D1C7;
+  color: white !important;
+  font-weight: 300;
+  text-decoration: uppercase;
+  padding: 10px 60px;
+  border-radius: 2px;
+  border-bottom: 2px solid #fff;
+  transition-duration: 0.3s;
+  transition: 0.2s opacity;
 }
 
 .button:hover {
-  background-color: transparent;
-  color: #33D1C7 !important;
-  border:  1px solid #33D1C7;
-  text-decoration: underline;
+  opacity: 0.8;
 }
+
 
 .button:active {
   background-color: #33D1C7;
@@ -121,18 +132,20 @@ a:focus {
   text-transform: uppercase;
   border: 2px solid #33D1C7;
   text-decoration: none;
+  transition-duration: 0.3s;
+  transition: 0.3s opacity;
 }
 
 .button.contact:hover {
   background-color: #33D1C7;
   color: #fff !important;
+  opacity: 0.8;
 }
 
 .button.contact:active {
   background-color: #7bbf6c;
   color: #fff !important;
 }
-
 
 .container {
   max-width: 1200px;
@@ -142,6 +155,12 @@ main {
   padding-top: 170px;
 }
 
+.prototype.button {
+  text-transform: uppercase;
+  text-decoration: noset;
+  text-align: center;
+}
+
 /* Layout styling */
 
 .container {
@@ -149,7 +168,7 @@ main {
 }
 
 .row {
-  margin: 25px 0;
+  margin: 10px 0;
 }
 
 #hero h1 {
@@ -157,9 +176,17 @@ main {
 }
 
 .logo {
-    font-size: 1.5em;
-    max-width: 250px;
-    text-align: center;
+  font-size: 1.5em;
+  max-width: 250px;
+  text-align: center;
+}
+
+p {
+  max-width: 1200px;
+}
+
+img {
+  max-width: 500px;
 }
 
 header {
@@ -174,7 +201,7 @@ header {
 nav > ul {
   list-style-type: none;
   padding: 0;
-  width: 100%;
+
 }
 
 nav > ul > li {
@@ -183,7 +210,7 @@ nav > ul > li {
 
 nav > ul > li > a {
   text-decoration: none;
-  padding: 0 15px;
+  padding: 0 8px;
   text-transform: uppercase;
   font-weight: 300;
   color: #33D1C7;
@@ -210,7 +237,7 @@ nav > ul > li > a:active {
   color: #33D1C7;
 }
 
-#index-hero {
+#hero {
   background-color: #ffffff;
   padding: 10px 0;
   display: inline-block;
@@ -219,20 +246,13 @@ nav > ul > li > a:active {
 }
 
 
-span {
-  color: #000000;
-  font-weight: 300;
-  font-size: 24px;
-
-}
-
 
 footer {
   background-color: #ffffff;
   padding: 5px 0;
   width: 100%;
   border: 3px solid #33D1C7;
-
+  text-align: center;
 }
 
 #social-links > ul {
@@ -261,4 +281,76 @@ footer {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 24px;
+}
+
+
+
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  main {
+    padding: 99px, 0, 0, 0;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  #hero {
+    text-align: center;
+  }
+
+  #hero span {
+    display: block;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  #about-page h3 { margin-top: 0;
+  }
+
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
 }
