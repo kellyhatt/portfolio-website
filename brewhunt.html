@@ -12,8 +12,8 @@
   </head>
   <body>
       <header>
-            <div class="row">
-              <img src="img/cv.jpg" class="logo" alt="Kelly Hatt UX Designer">
+            <div class="container">
+              <a href="index.html"><img src="img/logo.png" class="logo" alt="Kelly Hatt UX Designer"></a>
                 <nav>
                   <ul>
                     <li><a href="about.html">About</a></li>
@@ -23,39 +23,52 @@
                 </nav>
             </div>
       </header>
-      <main>
+      <main class="product">
 <!--Hero section-->
         <div id="brew-hunt-hero">
           <div class="container">
             <h1>Brew Hunt</h1>
-            <div class="row"> <!--image-->
-              <picture>
-                <source srcset="img/brew_hunt/brew_hunt_cover@1.jpg" media="(max-width:767px)">
-                  <img src="img/brew_hunt/brew_hunt_cover@1.jpg" alt="Brew Hunt">
-              </picture>
-            </div>
             <div class="row">
+              <div class="col-md-2 col-lg-4">
+                <picture>
+                  <source srcset="img/brew_hunt/title-1@1x.png" media="(max-width:767px)">
+                    <img src="img/brew_hunt/title-1@2x.png" alt="Brew Hunt">
+                </picture>
+              </div>
+              <div class="col-md-2 col-lg-4">
+                <picture>
+                  <source srcset="img/brew_hunt/title-2@1x.png" media="(max-width:767px)">
+                    <img src="img/brew_hunt/title-2@2x.png" alt="Brew Hunt">
+                </picture>
+              </div>
+              <div class="col-md-2 col-lg-4">
+                <picture>
+                  <source srcset="img/brew_hunt/title-3@1x.png" media="(max-width:767px)">
+                    <img src="img/brew_hunt/title-3@2x.png" alt="Brew Hunt">
+                </picture>
+              </div>
+            </div>
               <p>
               A web application showcasing the best local brews with even better discounts. In the spring of 2019 I embarked on an exciting new direction, the first step in a change of career with the help of Career Foundry’s UX Design Course. Throughout this 600 hour program I applied the UX techniques learnt and created this web app, Brew Hunt.
               </p>
-            </div>
           </div>
         </div>
+
 
         <div id="brew_hunt_research">
           <div class="container">
             <h2>My Process</h2>
 <!--research-->
               <picture>
-                <source srcset="img/brew_hunt/brew_hunt_research@1.jpg" media="(max-width:767px)">
-                  <img src="img/brew_hunt/brew_hunt_research@1.jpg" alt="Brew Hunt Research">
+                <source srcset="img/brew_hunt/brew_hunt_research@1x.png" media="(max-width:767px)">
+                  <img src="img/brew_hunt/brew_hunt_research@2x.png" alt="Brew Hunt Research">
               </picture>
                   <h3>Research</h3>
                   <p>
                     Initial Hypothesis:
                     When on a city break, users have limited time to discover the area and the place they are visiting. Providing users with interesting local facts and beverages to aid their discovery of the area will save time and enable them to see and experience the highlights of the city.
                     We know this to be true when we see how many users are engaging with the app in different locations all over the world.
-                    <br>
+                    <hr>
                     To take advantage of deals and vouchers users currently have to purchase these via an app which they find to be a long and tedious process. By eliminating the need for in app offers and vouchers to be purchased and instead, having them redeemable by presenting to the relevant location. Users will not feel the need to organise their trip so rigidly and can enjoy a spontaneous exploration of the city with the advantage of knowing they can discover discounts along the way.
                     We know this to be true when users can the QR codes and reveal the discounts.
                   </p>
@@ -65,10 +78,20 @@
 <!--Ideation-->
           <div id="brew_hunt_ideation">
             <div class="container">
-              <picture>
-                <source srcset="img/brew_hunt/brew_hunt_persona@1x.jpg" media="(max-width:767px)">
-                  <img src="img/brew_hunt/brew_hunt_persona@2x.jpg" alt="Brew Hunt">
-              </picture>
+              <div class="row">
+                <div class="col-md-6 col-lg-6">
+                  <picture>
+                    <source srcset="img/brew_hunt/brew_hunt_persona1@1x.png" media="(max-width:767px)">
+                      <img src="img/brew_hunt/brew_hunt_persona1@2x.png" alt="Brew Hunt">
+                  </picture>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                  <picture>
+                    <source srcset="img/brew_hunt/brew_hunt_persona2@1x.png" media="(max-width:767px)">
+                      <img src="img/brew_hunt/brew_hunt_persona2@2x.png" alt="Brew Hunt">
+                  </picture>
+                </div>
+              </div>
               <h3>Ideation</h3>
                 <p>
                     Example user flows and user personas helped shape the app and keep the screens to a minimum, improving the users experience and keeping the information concise and enjoyable to use.
@@ -76,32 +99,33 @@
                 </p>
             </div>
           </div>
+
 <!--Wireframe-->
           <div id="brew_hunt_wireframe">
             <div class="container">
               <div class="row">
                 <div class="col-md-6 col-lg-3 ">
                   <picture>
-                    <source srcset="img/brew_hunt/brew_hunt_wireframe1@2.jpg" media="(max-width:767px)">
-                      <img src="img/brew_hunt/brew_hunt_wireframe1@2.jpg" alt="Brew Hunt">
+                    <source srcset="img/brew_hunt/brew_hunt_wireframe1@1x.png" media="(max-width:767px)">
+                      <img src="img/brew_hunt/brew_hunt_wireframe1@2x.png" alt="Brew Hunt">
                   </picture>
                 </div>
                 <div class="col-md-6 col-lg-3">
                   <picture>
-                    <source srcset="img/brew_hunt/brew_hunt_wireframe2@2.jpg" media="(max-width:767px)">
-                      <img src="img/brew_hunt/brew_hunt_wireframe2@2.jpg" alt="Brew Hunt">
+                    <source srcset="img/brew_hunt/brew_hunt_wireframe2@1x.png" media="(max-width:767px)">
+                      <img src="img/brew_hunt/brew_hunt_wireframe2@2x.png" alt="Brew Hunt">
                   </picture>
                 </div>
                 <div class="col-md-6 col-lg-3">
                   <picture>
-                    <source srcset="img/brew_hunt/brew_hunt_wireframe3@2.jpg" media="(max-width:767px)">
-                      <img src="img/brew_hunt/brew_hunt_wireframe3@2.jpg" alt="Brew Hunt">
+                    <source srcset="img/brew_hunt/brew_hunt_wireframe3@1x.png" media="(max-width:767px)">
+                      <img src="img/brew_hunt/brew_hunt_wireframe3@2x.png" alt="Brew Hunt">
                   </picture>
                 </div>
                 <div class="col-md-6 col-lg-3">
                   <picture>
-                    <source srcset="img/brew_hunt/brew_hunt_wireframe4@2.jpg" media="(max-width:767px)">
-                      <img src="img/brew_hunt/brew_hunt_wireframe4@2.jpg" alt="Brew Hunt">
+                    <source srcset="img/brew_hunt/brew_hunt_wireframe4@1x.png" media="(max-width:767px)">
+                      <img src="img/brew_hunt/brew_hunt_wireframe4@2x.png" alt="Brew Hunt">
                   </picture>
                 </div>
               </div>
@@ -130,16 +154,16 @@
         <div id="brew_hunt_design">
             <div class="container">
               <div class="row">
-                <div class="col-md-6 col-lg-7"> <!--image column 1-->
+                <div class="col-md-6 col-lg-6"> <!--image column 1-->
                   <picture>
-                    <source srcset="img/brew_hunt/brew_hunt_accessibility2.1@2.jpg" media="(max-width:767px)">
-                      <img src="img/brew_hunt/brew_hunt_accessibility2.1@2.jpg" alt="Brew Hunt Landing Page Before">
+                    <source srcset="img/brew_hunt/brew_hunt_accessibility2.1@1x.png" media="(max-width:767px)">
+                      <img src="img/brew_hunt/brew_hunt_accessibility2.1@2x.png" alt="Brew Hunt Landing Page Before">
                   </picture>
                 </div>
-                <div class="col-md-6 col-lg-5"><!--image column 2-->
+                <div class="col-md-6 col-lg-6"><!--image column 2-->
                   <picture>
-                    <source srcset="img/brew_hunt/brew_hunt_accessibility2.2@2.jpg" media="(max-width:767px)">
-                      <img src="img/brew_hunt/brew_hunt_accessibility2.2@2.jpg" alt="Brew Hunt Landing Page improved">
+                    <source srcset="img/brew_hunt/brew_hunt_accessibility2.2@1x.png" media="(max-width:767px)">
+                      <img src="img/brew_hunt/brew_hunt_accessibility2.2@2x.png" alt="Brew Hunt Landing Page improved">
                   </picture>
                 </div><!--close column 2-->
               </div><!--close row-->
@@ -155,14 +179,14 @@
               <div class="row">
                 <div class="col-md-6 col-lg-7"> <!--image column 1-->
                   <picture>
-                    <source srcset="img/brew_hunt/brew_hunt_accessibility1.1@2.jpg" media="(max-width:767px)">
-                      <img src="img/brew_hunt/brew_hunt_accessibility1.1@2.jpg" alt="Brew Hunt Login screen before">
+                    <source srcset="img/brew_hunt/brew_hunt_accessibility1.1@1x.png" media="(max-width:767px)">
+                      <img src="img/brew_hunt/brew_hunt_accessibility1.1@2x.png" alt="Brew Hunt Login screen before">
                   </picture>
                 </div>
                 <div class="col-md-6 col-lg-5"> <!--image column 2-->
                   <picture>
-                    <source srcset="img/brew_hunt/brew_hunt_accessibility2.2@2.jpg" media="(max-width:767px)">
-                      <img src="img/brew_hunt/brew_hunt_accessibility1.1@2.jpg" alt="Brew Hunt Login screen improved">
+                    <source srcset="img/brew_hunt/brew_hunt_accessibility1.2@1x.png" media="(max-width:767px)">
+                      <img src="img/brew_hunt/brew_hunt_accessibility1.2@2x.png" alt="Brew Hunt Login screen improved">
                   </picture>
                 </div>
               </div>
@@ -175,14 +199,14 @@
               <div class="row">
                 <div class="col-md-6 col-lg-7"> <!--image column 1-->
                   <picture>
-                    <source srcset="img/brew_hunt/brew_hunt_accessibility3.1@2.jpg" media="(max-width:767px)">
-                      <img src="img/brew_hunt/brew_hunt_accessibility3.1@2.jpg" alt="Brew Hunt search results before">
+                    <source srcset="img/brew_hunt/brew_hunt_accessibility3.1@1x.png" media="(max-width:767px)">
+                      <img src="img/brew_hunt/brew_hunt_accessibility3.1@2x.png" alt="Brew Hunt search results before">
                   </picture>
                 </div>
                 <div class="col-md-6 col-lg-5"> <!--image column 2-->
                   <picture>
-                      <source srcset="img/brew_hunt/brew_hunt_accessibility3.2@2.jpg" media="(max-width:767px)">
-                        <img src="img/brew_hunt/brew_hunt_accessibility3.2@2.jpg" alt="Brew Hunt Search results improved">
+                      <source srcset="img/brew_hunt/brew_hunt_accessibility3.2@1x.png" media="(max-width:767px)">
+                        <img src="img/brew_hunt/brew_hunt_accessibility3.2@2x.png" alt="Brew Hunt Search results improved">
                   </picture>
                 </div>
               </div>
@@ -197,9 +221,8 @@
           <div id="brew_hunt_prototype">
             <div class="container">
                 <div class="row">
-                  <h3>Prototype</h3>
                   <div class="prototype button">
-                    <a href="https://kelly746489.invisionapp.com/public/share/NDYVQCVEV#/screens/475593338" class="button">Brew Hunt <br> clickable prototype</a>
+                    <a href="https://kelly746489.invisionapp.com/public/share/NDYVQCVEV#/screens/475593338" class="button">Brew Hunt prototype</a>
                   </div>
                 </div><!--close container-->
             </div><!--close section-->
