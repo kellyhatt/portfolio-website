@@ -8,21 +8,22 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://kit.fontawesome.com/d9ae58f40d.js" crossorigin="anonymous"></script>
-
   </head>
   <body>
-
       <header>
-            <div class="container">
-              <a href="index.html"><img src="img/logo.png" class="logo" alt="Kelly Hatt UX Designer"></a>
-                <nav>
-                  <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="index.html">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                  </ul>
-                </nav>
+        <div class="container">
+          <div class="navtoggle" id="myNavtoggle">
+            <a href="index.html"><img src="img/logo.png" class="logo" alt="Kelly Hatt UX Designer"></a>
+              <nav>
+                <ul>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="index.html">Portfolio</a></li>
+                  <li><a class="scroll" href="#contact" onclick="menuToggle()">Contact</a></li>
+                  <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                </ul>
+              </nav>
             </div>
+        </div>
       </header>
       <main>
 <!--Hero section-->
@@ -61,7 +62,7 @@
               <div class="row">
                 <div class="col-md-6 col-lg-7"> <!--left column-->
                   <picture>
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="berlin-illustration" height="" viewBox="0 0 700 505" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="berlin-illustration" height="" viewBox="0 0 700 505" xmlns:xlink="http://www.w3.org/1999/xlink">
                           <defs>
                               <polygon id="a" points=".06 231.917 .06 .929 688.717 .929 688.717 231.917" />
                           </defs>
@@ -1032,6 +1033,7 @@
             </div>
           </div>
         </footer>
-        <script src="js/script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js"   integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="   crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
     </body>
 </html>
