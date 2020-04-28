@@ -7,7 +7,6 @@ function menuToggle() {
     x.className = 'navtoggle';
   }
 }
-
 $(document).ready(function() {
 
   var scrollLink = $('.scroll');
