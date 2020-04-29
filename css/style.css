@@ -272,7 +272,8 @@ nav > ul > li > a:active {
   right: 0;
   top: 2px;
   font-size: 30px;
-  padding-right: 0;
+  padding-right: 20px;
+  padding-top: 10px;
 }
 
 .navtoggle.responsive nav {
@@ -287,10 +288,6 @@ nav > ul > li > a:active {
 
 .navtoggle.responsive li:last-child {
   padding: 0 0 10px;
-}
-
-.fa-bars:before {
-  padding-right: 20px;
 }
 
 #hero {
