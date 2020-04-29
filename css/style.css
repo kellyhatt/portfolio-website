@@ -289,6 +289,10 @@ nav > ul > li > a:active {
   padding: 0 0 10px;
 }
 
+.fa-bars:before {
+  padding-right: 20px;
+}
+
 #hero {
   background-color: #464646;
   padding: 10px 0;
